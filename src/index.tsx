@@ -1,10 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { AppWrapper } from './App';
+import { Portfolio } from './Portfolio';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-  <AppWrapper />,
+  <Portfolio />,
   document.getElementById('root') as HTMLElement
 );
 registerServiceWorker();
