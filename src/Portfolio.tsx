@@ -10,7 +10,7 @@ import {
   SectionSubTitle,
   SectionTitle, 
 } from './components/SectionComponents';
-import { BodyText } from './components/TypographyComponents';
+import { AboutMeBodyText } from './components/TypographyComponents';
 
 
 export function Portfolio() {
@@ -30,9 +30,6 @@ export function Portfolio() {
     width: 60%;
   `;
 
-  const AboutMeBodyText = styled(BodyText)`
-    margin-top: 62px;
-  `;
 
   const AboutMeImage = styled.div`
     position: relative;
@@ -73,6 +70,20 @@ export function Portfolio() {
       </Section>
       <Section theme="dark">
         <SectionTitle theme="dark">Skills</SectionTitle>
+        <ul>
+          <li>Javascript</li>
+          <li>ECMAScript</li>
+          <li>ReactJS</li>
+          <li>Redux</li>
+          <li>Flow</li>
+          <li>TypeScript</li>
+          <li>Joi</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Sass</li>
+          <li>Styled Components</li>
+          <li>Jest</li>
+        </ul>
       </Section>
       <Section theme="light">
         <SectionTitle theme="light">Experience</SectionTitle>
