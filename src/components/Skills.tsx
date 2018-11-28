@@ -19,7 +19,6 @@ export function Skills() {
   interface IntSkill {name: string, Logo: any}
   const skillsList: IntSkill[] = [
     { name: 'Javascript', Logo: JavascriptLogo },
-    { name: 'ECMAScript', Logo: ReactLogo },
     { name: 'ReactJS', Logo: ReactLogo },
     { name: 'Redux', Logo: ReactLogo },
     { name: 'Flow', Logo: ReactLogo },
