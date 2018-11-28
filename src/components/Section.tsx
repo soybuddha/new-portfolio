@@ -1,6 +1,13 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
+import { 
+  darkThemeBackground, 
+  darkThemeText,
+  lightThemeBackground,
+  lightThemeText, 
+} from '../styled-components/variables';
+
 interface IntSectionProps {
   theme: 'light'|'dark',
   background?: string,
@@ -15,11 +22,11 @@ interface IntStyledSectionProps {
 const Section: React.SFC<IntSectionProps> = (props) => {
 
   const StyledSection = styled.section`
-    background-color: ${(p: IntStyledSectionProps) => p.theme === 'light' ? '#efefef' : '#1f4552'};
+    background-color: ${(p: IntStyledSectionProps) => p.theme === 'light' ? lightThemeBackground : darkThemeBackground};
     background-image: ${p => p.background ? `url('../${p.background}')` : 'none'};
     background-size: 100%;
-    color: ${p => p.theme === 'light' ? '#333333' : '#ffffff'};
-    padding: 200px 130px;
+    color: ${p => p.theme === 'light' ? lightThemeText : darkThemeText};
+    padding: 130px;
   `;
 
   return (
