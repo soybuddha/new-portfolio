@@ -9,9 +9,13 @@ import { JestLogo } from '../images/svgs/Jest';
 import { ReactLogo } from '../images/svgs/React';
 import { ReduxLogo } from '../images/svgs/Redux';
 import { SassLogo } from '../images/svgs/Sass';
+import { TypeScriptLogo } from '../images/svgs/TypeScript';
+import { Section } from './Section';
 
-import { TypeScriptLogo } from 'src/images/svgs/TypeScript';
-import { SectionTitle } from '../styled-components/Global';
+import { 
+  SectionSpacer, 
+  SectionTitle, 
+} from '../styled-components/Global';
 import { 
   SkillItem, 
   SkillLogo, 
@@ -25,7 +29,7 @@ import {
   lightThemeText, 
 } from '../styled-components/variables';
 
-import Section from './Section';
+
 
 
 export interface IntSkillLogoProps {
@@ -73,6 +77,7 @@ export function Skills() {
   return (
     <Section theme="dark">
       <SectionTitle theme="dark">Skills</SectionTitle>
+      <SectionSpacer theme="dark" />
       <SkillsList>
         {skillsList.map((skill: IntSkill, index: number) => {
           const isLastItem: boolean = index === skillsList.length - 1;

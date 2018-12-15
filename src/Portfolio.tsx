@@ -1,10 +1,11 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import Section from './components/Section';
 import profileImage from './images/about-me-photo.jpg';
 import titleImage from './images/castle-hill.jpg';
 
+import { Experience } from './components/Experience';
+import { Section } from './components/Section';
 import { NetworkingLinks } from './components/SectionComponents';
 import { Skills } from './components/Skills';
 import { AboutMeBodyText } from './styled-components/AboutMe';
@@ -67,10 +68,7 @@ export function Portfolio() {
         </AboutMeContent>
       </Section>
       <Skills />
-      <Section theme="light">
-        <SectionTitle theme="light">Experience</SectionTitle>
-        <SectionSpacer theme="light" />
-      </Section>
+      <Experience />
       <Section theme="dark">
         <SectionTitle theme="dark">Contact</SectionTitle>
         <SectionSpacer theme="dark" />

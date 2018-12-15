@@ -19,7 +19,7 @@ interface IntStyledSectionProps {
   background: void | string,
 }
 
-const Section: React.SFC<IntSectionProps> = (props) => {
+export const Section: React.SFC<IntSectionProps> = (props) => {
 
   const StyledSection = styled.section`
     background-color: ${(p: IntStyledSectionProps) => p.theme === 'light' ? lightThemeBackground : darkThemeBackground};
@@ -33,5 +33,3 @@ const Section: React.SFC<IntSectionProps> = (props) => {
     <StyledSection theme={props.theme} background={props.background}>{props.children}</StyledSection>
   );
 }
-
-export default Section;

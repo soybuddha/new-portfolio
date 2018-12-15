@@ -11,7 +11,7 @@ export const SectionTitle = styled.h1`
   font-weight: normal;
   letter-spacing: 6px;
   text-transform: uppercase;
-  margin: 0 0 40px;
+  margin: 0;
 `;
 
 export const SectionSubTitle = styled.h2`
@@ -26,7 +26,7 @@ export const SectionSubTitle = styled.h2`
 export const SectionSpacer = styled.hr`
   width: 60px;
   height: 2px;
-  margin: 0;
+  margin: 40px 0;
   border: none;
   background-color: ${p => p.theme === 'light' ? '#333333' : '#ffffff'};
 `;
