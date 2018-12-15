@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 
 import { IntSkillLogoProps } from '../../components/Skills';
@@ -11,7 +10,7 @@ export const JavascriptLogo: React.SFC<IntSkillLogoProps> = (props) => {
   const backgroundColor: string = props.theme === 'dark' ? '#ffffff' : darkThemeBackground;
   const strokeColor: string = props.theme === 'dark' ? darkThemeBackground : lightThemeBackground;
   return (
-    <div style={{ backgroundColor }}>
+    <div style={{ backgroundColor, height: '24px', width: '24px' }}>
       <svg 
         width="100%" 
         height="100%" 
@@ -22,9 +21,4 @@ export const JavascriptLogo: React.SFC<IntSkillLogoProps> = (props) => {
       </svg>
     </div>
   );
-}
-
-
-
-
-
+  }

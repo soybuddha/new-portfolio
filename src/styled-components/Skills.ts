@@ -5,7 +5,7 @@ import { mainFontFamily } from './variables';
 
 export const SkillsList = styled(HorizontalUL)`
   flex-wrap: wrap;
-  width: 85%;
+  width: 100%%;
 `;
 
 export const SkillItem = styled(LI)`
@@ -13,6 +13,10 @@ export const SkillItem = styled(LI)`
   align-items: center;
   width: 33%;
   margin-bottom: 30px;
+
+  &.last-skill {
+    width: 50%;
+  }
 `;
 
 export const SkillLogo = styled.div`

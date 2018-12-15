@@ -8,7 +8,7 @@ import { LinkedinLogo } from '../images/svgs/Linkedin';
 export const NetworkingLinks = () => {
   const StyledNetworkingLinks = styled.div`
     display: flex;
-    margin-top: 70px;
+    margin-top: 40px;
 
     a {
       margin-right: 20px;

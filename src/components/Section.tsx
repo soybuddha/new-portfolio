@@ -26,7 +26,7 @@ const Section: React.SFC<IntSectionProps> = (props) => {
     background-image: ${p => p.background ? `url('../${p.background}')` : 'none'};
     background-size: 100%;
     color: ${p => p.theme === 'light' ? lightThemeText : darkThemeText};
-    padding: 130px;
+    padding: 80px 130px;
   `;
 
   return (
