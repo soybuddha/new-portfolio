@@ -1,11 +1,19 @@
 import * as React from 'react';
 
+import {
+  Duration,
+  Employer,
+  Position,
+} from '../styled-components/Experience';
 import { 
+  BodyText,
+  LI, 
   SectionSpacer, 
-  SectionTitle, 
-  UL
+  SectionTitle,
+  UL,
 } from '../styled-components/Global';
 import { Section } from './Section';
+
 
 export function Experience() {
   interface IntExperience {
@@ -52,14 +60,17 @@ export function Experience() {
       <SectionTitle theme="light">Experience</SectionTitle>
       <SectionSpacer theme="light" />
       <UL>
-        {experienceList.map((job: IntExperience) => (
-          <li>
-            {job.employer}
-            {job.startDate} - {job.endDate}
-            {job.position}
-            {job.description}
-          </li>
-        ))}
+        {experienceList.map((job: IntExperience) => {
+          const conditionedKey: string = job.employer.replace(/[^a-zA-Z0-9]+/gi, '');
+          return (
+            <LI key={conditionedKey.toLowerCase()}>
+              <Employer>{job.employer}</Employer>
+              <Duration>{job.startDate} - {job.endDate}</Duration>
+              <Position>{job.position}</Position>
+              <BodyText>{job.description}</BodyText>
+            </LI>
+          );
+        })}
       </UL>
     </Section>
   );
