@@ -2,14 +2,19 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 import profileImage from './images/about-me-photo.jpg';
-import titleImage from './images/castle-hill.jpg';
 
+import { Contact } from './components/Contact';
 import { Experience } from './components/Experience';
-import { Section } from './components/Section';
 import { NetworkingLinks } from './components/SectionComponents';
 import { Skills } from './components/Skills';
 import { AboutMeBodyText } from './styled-components/AboutMe';
-import { SectionSpacer, SectionSubTitle, SectionTitle } from './styled-components/Global';
+import { 
+  Section, 
+  SectionSpacer, 
+  SectionSubTitle, 
+  SectionTitle, 
+  TitleSection,
+} from './styled-components/Global';
 
 export function Portfolio() {
   const Wrapper = styled.div`
@@ -45,10 +50,7 @@ export function Portfolio() {
 
   return (
     <Wrapper>
-      <Section 
-        theme="dark"
-        background={titleImage}
-      >
+      <TitleSection theme="dark">
         <SectionTitle theme="dark">Jeremiah Brown</SectionTitle>
         <SectionSpacer theme="dark" />
         <SectionSubTitle>
@@ -56,23 +58,23 @@ export function Portfolio() {
           Based in Austin, Texas
         </SectionSubTitle>
         <NetworkingLinks />
-      </Section>
+      </TitleSection>
       <Section theme="light">
         <AboutMeContent>
           <AboutMeText>
             <SectionTitle theme="light">About</SectionTitle>
             <SectionSpacer theme="light" />
-            <AboutMeBodyText>Pitchfork you probably haven't heard of them iceland, green juice raw denim succulents narwhal taxidermy jean shorts vape lyft portland gluten-free tacos. Food truck flexitarian quinoa pok pok, hell of XOXO kitsch keytar.</AboutMeBodyText>
+            <AboutMeBodyText>
+              I've been called a lot of things: CSS Engineer, UI Engineer, UI Developer, and Front End Engineer, 
+              but they all mean the same thing: I create awesome experiences on the web. 
+            </AboutMeBodyText>
           </AboutMeText>
           <AboutMeImage><img src={profileImage} /></AboutMeImage>
         </AboutMeContent>
       </Section>
       <Skills />
       <Experience />
-      <Section theme="dark">
-        <SectionTitle theme="dark">Contact</SectionTitle>
-        <SectionSpacer theme="dark" />
-      </Section>
+      <Contact />
     </Wrapper>
   );
 }

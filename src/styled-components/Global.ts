@@ -1,9 +1,42 @@
 import styled from 'styled-components';
+
+import titleImage from '../images/castle-hill.jpg';
+import mapImage from '../images/map.png';
+
 import { 
   bodyTextSize, 
-  mainFontFamily, 
-  titleFontFamily, 
+  darkThemeBackground,
+  darkThemeText,
+  lightThemeBackground, 
+  lightThemeText, 
+  mainFontFamily,
+  titleFontFamily,
 } from './variables';
+
+export const Section = styled.section`
+  background-color: ${p => p.theme === 'light' ? lightThemeBackground : darkThemeBackground};
+  color: ${p => p.theme === 'light' ? lightThemeText : darkThemeText};
+  padding: 80px 130px;
+`;
+
+export const TitleSection = styled(Section)`
+  background-image: ${`url('../${titleImage}')`};
+  background-size: 100%;
+  background-position: bottom center;
+`;
+
+export const ContactSection = styled(Section)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  background-image: ${`url('../${mapImage}')`};
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 683px;
+`;
 
 export const SectionTitle = styled.h1`
   font-family: ${titleFontFamily}, sans-serif;
@@ -36,7 +69,6 @@ export const BodyText = styled.p`
   font-size: ${bodyTextSize};
   line-height: 1.89;
   margin: 0;
-  color: #333333;
 `;
 
 export const SvgLink = styled.a`

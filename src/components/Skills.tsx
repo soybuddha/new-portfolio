@@ -10,11 +10,11 @@ import { ReactLogo } from '../images/svgs/React';
 import { ReduxLogo } from '../images/svgs/Redux';
 import { SassLogo } from '../images/svgs/Sass';
 import { TypeScriptLogo } from '../images/svgs/TypeScript';
-import { Section } from './Section';
 
 import { 
+  Section, 
   SectionSpacer, 
-  SectionTitle, 
+  SectionTitle,
 } from '../styled-components/Global';
 import { 
   SkillItem, 
@@ -28,9 +28,6 @@ import {
   lightThemeBackground,
   lightThemeText, 
 } from '../styled-components/variables';
-
-
-
 
 export interface IntSkillLogoProps {
   theme: 'light' | 'dark',
