@@ -12,8 +12,8 @@ export const JobList = styled(UL)`
 
 export const Job = styled(LI)`
   border-bottom: 1px solid #cccccc;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
+  padding-bottom: 60px;
+  margin-bottom: 60px;
 
   :last-child {
     padding-bottom: 0;

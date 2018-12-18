@@ -20,9 +20,15 @@ export const Section = styled.section`
 `;
 
 export const TitleSection = styled(Section)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-image: ${`url('../${titleImage}')`};
   background-size: 100%;
   background-position: bottom center;
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 688px; 
 `;
 
 export const ContactSection = styled(Section)`
@@ -53,7 +59,7 @@ export const SectionSubTitle = styled.h2`
   font-weight: normal;
   letter-spacing: 4.4px;
   text-transform: uppercase;
-  margin: 40px 0 0;
+  margin: 0;
 `;
 
 export const SectionSpacer = styled.hr`
