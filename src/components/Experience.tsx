@@ -27,31 +27,31 @@ export function Experience() {
     startDate: 'August 2018',
     endDate: 'Present',
     position: 'Sr. Software Engineer',
-    description: 'Pitchfork you probably haven\'t heard of them iceland, green juice raw denim succulents narwhal taxidermy jean shorts vape lyft portland gluten-free tacos.Food truck flexitarian quinoa pok pok, hell of XOXO kitsch keytar.',
+    description: 'Altavoz was acquired by IQVIA, the largest clinical research in the world, to continue developing and expanding the product.',
   }, {
     employer: 'Altavoz, Inc.',
     startDate: 'April 2017',
     endDate: 'August 2018',
     position: 'Sr. Software Engineer',
-    description: 'Pitchfork you probably haven\'t heard of them iceland, green juice raw denim succulents narwhal taxidermy jean shorts vape lyft portland gluten-free tacos.Food truck flexitarian quinoa pok pok, hell of XOXO kitsch keytar.',
+    description: 'Created the front end experience for a platform to help clinical research organizations create clinical assessments and track the outcomes for their patients. The tech stack is React, Redux, Sass, and Flow',
   }, {
     employer: 'HomeAway',
     startDate: 'January 2012',
     endDate: 'April 2017',
     position: 'UI Developer',
-    description: 'Pitchfork you probably haven\'t heard of them iceland, green juice raw denim succulents narwhal taxidermy jean shorts vape lyft portland gluten-free tacos.Food truck flexitarian quinoa pok pok, hell of XOXO kitsch keytar.',
+    description: 'Developed and updated the onboarding process and listing management experience for users listing their residences as vacation rentals. The tech stack was React, Redux, Backbone, and Sass',
   }, {
     employer: 'MapMyFitness',
     startDate: 'February 2011',
     endDate: 'January 2012',
     position: 'Front End Developer',
-    description: 'Pitchfork you probably haven\'t heard of them iceland, green juice raw denim succulents narwhal taxidermy jean shorts vape lyft portland gluten-free tacos.Food truck flexitarian quinoa pok pok, hell of XOXO kitsch keytar.',
+    description: 'Worked on the front end experience for platinum members and helped with general front end work. The tech stack was Django, JQuery, and Sass.',
   }, {
-    employer: 'BancVue',
+    employer: 'BancVue (currently Kasasa)',
     startDate: 'June 2008',
     endDate: 'February 2011',
     position: 'Front End Developer',
-    description: 'Pitchfork you probably haven\'t heard of them iceland, green juice raw denim succulents narwhal taxidermy jean shorts vape lyft portland gluten-free tacos.Food truck flexitarian quinoa pok pok, hell of XOXO kitsch keytar.',
+    description: 'Worked on producing an online experience for community financial institutions all over the country. Started as a junior level engineer and progressed to being the lead engineer of a small group creating several semi-customized websites mostly. The tech stack was JQuery and Sass.',
   }];
 
   return (
