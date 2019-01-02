@@ -23,7 +23,7 @@ export const TitleSection = styled(Section)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: ${`url('../${titleImage}')`};
+  background-image: ${`url('${titleImage}')`};
   background-size: 100%;
   background-position: bottom center;
   padding-top: 0;
@@ -38,7 +38,7 @@ export const ContactSection = styled(Section)`
   padding-top: 0;
   padding-bottom: 0;
   position: relative;
-  background-image: ${`url('../${mapImage}')`};
+  background-image: ${`url('${mapImage}')`};
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 683px;
