@@ -13,10 +13,76 @@ import {
   titleFontFamily,
 } from './variables';
 
+interface IntMediaWidth {
+  min?: string,
+  max?: string,
+}
+
+interface IntMediaWidths {
+  phone: IntMediaWidth,
+  tablet: IntMediaWidth,
+  desktop: IntMediaWidth,
+};
+
+export const mediaWidths: IntMediaWidths = {
+  phone: {
+    max: '767px',
+  },
+  tablet: {
+    min: '768px',
+    max: '1024px',
+  }, 
+  desktop: {
+    min: '1025px',
+  },
+};
+
+export const SectionTitle = styled.h1`
+  font-family: ${titleFontFamily}, sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (max-width: ${mediaWidths.phone.max}) {
+    display: none;
+  }
+`;
+
+export const SectionSubTitle = styled.h2`
+  font-family: ${titleFontFamily}, sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 4.4px;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (max-width: ${mediaWidths.phone.max}) {
+    display: none;
+  }
+`;
+
+export const SectionSpacer = styled.hr`
+  width: 60px;
+  height: 2px;
+  margin: 40px 0;
+  border: none;
+  background-color: ${p => p.theme === 'light' ? '#333333' : '#ffffff'};
+
+  @media (max-width: ${mediaWidths.phone.max}) {
+    display: none;
+  }
+`;
+
 export const Section = styled.section`
   background-color: ${p => p.theme === 'light' ? lightThemeBackground : darkThemeBackground};
   color: ${p => p.theme === 'light' ? lightThemeText : darkThemeText};
   padding: 80px 130px;
+
+  @media (max-width: ${mediaWidths.phone.max}) {
+    padding: 25px;
+  }
 `;
 
 export const TitleSection = styled(Section)`
@@ -29,6 +95,26 @@ export const TitleSection = styled(Section)`
   padding-top: 0;
   padding-bottom: 0;
   min-height: 688px; 
+
+  @media (max-width: ${mediaWidths.phone.max}) {
+    min-height: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    ${SectionTitle} {
+      display: block;
+      font-size: 24px;
+    }
+  }
+`;
+
+export const AboutSection = styled(Section)`
+  @media (max-width: ${mediaWidths.phone.max}) {
+    margin-top: 120px;
+  }
 `;
 
 export const ContactSection = styled(Section)`
@@ -42,32 +128,6 @@ export const ContactSection = styled(Section)`
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 683px;
-`;
-
-export const SectionTitle = styled.h1`
-  font-family: ${titleFontFamily}, sans-serif;
-  font-size: 48px;
-  font-weight: normal;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  margin: 0;
-`;
-
-export const SectionSubTitle = styled.h2`
-  font-family: ${titleFontFamily}, sans-serif;
-  font-size: 40px;
-  font-weight: normal;
-  letter-spacing: 4.4px;
-  text-transform: uppercase;
-  margin: 0;
-`;
-
-export const SectionSpacer = styled.hr`
-  width: 60px;
-  height: 2px;
-  margin: 40px 0;
-  border: none;
-  background-color: ${p => p.theme === 'light' ? '#333333' : '#ffffff'};
 `;
 
 export const BodyText = styled.p`

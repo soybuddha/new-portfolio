@@ -1,11 +1,16 @@
 import styled from 'styled-components';
 
-import { HorizontalUL, LI } from './Global';
+import { HorizontalUL, LI, mediaWidths } from './Global';
 import { mainFontFamily } from './variables';
+
 
 export const SkillsList = styled(HorizontalUL)`
   flex-wrap: wrap;
   width: 100%%;
+
+  @media (max-width: ${mediaWidths.phone.max}) {
+    flex-direction: column;
+  }
 `;
 
 export const SkillItem = styled(LI)`
@@ -16,6 +21,10 @@ export const SkillItem = styled(LI)`
 
   &.last-skill {
     width: 50%;
+  }
+
+  @media (max-width: ${mediaWidths.phone.max}) {
+    width: 100%;
   }
 `;
 

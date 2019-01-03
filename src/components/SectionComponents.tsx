@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { GithubLogo } from '../images/svgs/Github';
 import { LinkedinLogo } from '../images/svgs/Linkedin';
+import { mediaWidths } from '../styled-components/Global';
 
 // Networking Links
 export const NetworkingLinks = () => {
@@ -12,6 +13,10 @@ export const NetworkingLinks = () => {
 
     a {
       margin-right: 20px;
+    }
+
+    @media (max-width: ${mediaWidths.phone.max}) {
+      display: none;
     }
   `;
 

@@ -14,7 +14,7 @@ export interface IntContactProps {
 
 export function Contact() {
   return (
-    <ContactSection theme="dark">
+    <ContactSection id="contact" theme="dark">
       <SectionTitle theme="dark">Contact</SectionTitle>
       <SectionSpacer theme="dark" />
       <BodyText>jeremiahgoldwin@gmail.com</BodyText>

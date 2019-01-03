@@ -55,7 +55,7 @@ export function Experience() {
   }];
 
   return (
-    <Section theme="light">
+    <Section id="experience" theme="light">
       <SectionTitle theme="light">Experience</SectionTitle>
       <SectionSpacer theme="light" />
       <JobList>
