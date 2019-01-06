@@ -33,11 +33,17 @@ export const AboutMeImage = styled.div`
     border-radius: 150px;
     z-index: 0;
   }
+
+  @media (max-width: ${mediaWidths.tablet.max}) {
+    width: 250px;
+    height: 250px;
+  }
 `;
 
 export const AboutMeContent = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   @media (max-width: ${mediaWidths.phone.max}) {
     flex-direction: column;
     align-items: center;

@@ -83,6 +83,10 @@ export const Section = styled.section`
   @media (max-width: ${mediaWidths.phone.max}) {
     padding: 25px;
   }
+
+  @media (min-width: ${mediaWidths.tablet.min}) and (max-width: ${mediaWidths.tablet.max}) {
+    padding: 40px;
+  }
 `;
 
 export const TitleSection = styled(Section)`
@@ -97,7 +101,6 @@ export const TitleSection = styled(Section)`
   min-height: 688px; 
 
   @media (max-width: ${mediaWidths.phone.max}) {
-    min-height: 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -112,6 +115,10 @@ export const TitleSection = styled(Section)`
     div {
       display: none;
     }
+  }
+
+  @media (max-width: ${mediaWidths.tablet.max}) {
+    min-height: 0;
   }
 `;
 
@@ -133,9 +140,12 @@ export const ContactSection = styled(Section)`
   background-position: center center;
   min-height: 683px;
 
-  @media (max-width: ${mediaWidths.phone.max}) {
+  @media (max-width: ${mediaWidths.tablet.max}) {
     background-position: 44% 80%;
     background-size: 150%;
+  }
+
+  @media (max-width: ${mediaWidths.tablet.max}) {
     min-height: 0;
   }
 `;
