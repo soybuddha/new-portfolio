@@ -3,7 +3,8 @@
   "rules": {
     "no-console": { "severity": "warning" },
     "no-default-export": true,
-    "object-literal-sort-keys": false
+    "object-literal-sort-keys": false,
+    "jsx-no-lambda": false
   },
   "linterOptions": {
     "exclude": [

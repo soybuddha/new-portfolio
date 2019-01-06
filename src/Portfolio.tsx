@@ -5,7 +5,7 @@ import profileImage from './images/about-me-photo.jpg';
 
 import { Contact } from './components/Contact';
 import { Experience } from './components/Experience';
-import { NetworkingLinks } from './components/SectionComponents';
+import { MobileLink, NetworkingLinks } from './components/SectionComponents';
 import { Skills } from './components/Skills';
 import { 
   AboutMeBodyText, 
@@ -43,10 +43,18 @@ export function Portfolio() {
         <NetworkingLinks />
       </TitleSection>
       <MobileNav>
-        <LI>About</LI>
-        <LI>Skills</LI>
-        <LI>Experience</LI>
-        <LI>Contact</LI>
+        <LI>
+          <MobileLink text="About" />
+        </LI>
+        <LI>
+          <MobileLink text="Skills" />
+        </LI>
+        <LI>
+          <MobileLink text="Experience" />
+        </LI>
+        <LI>
+          <MobileLink text="Contact" />
+        </LI>
       </MobileNav>
       <AboutSection id="about" theme="light">
         <AboutMeContent>

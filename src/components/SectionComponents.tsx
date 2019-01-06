@@ -30,3 +30,20 @@ export const NetworkingLinks = () => {
     </StyledNetworkingLinks>
   );
 }
+
+interface IntMobileLink {
+  text: string,
+}
+
+export const MobileLink: React.SFC<IntMobileLink> = (props) => {
+  return (
+    <a 
+      href="#"
+      onClick={(event) => {
+        event.preventDefault();
+      }}
+    >
+      {props.text}
+    </a>
+  );
+}

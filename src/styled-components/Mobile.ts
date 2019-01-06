@@ -5,6 +5,7 @@ import {
   mediaWidths
 } from './Global';
 import {
+  darkThemeBackground,
   lightThemeBackground,
   lightThemeText,
 } from './variables';
@@ -20,9 +21,23 @@ export const MobileNav = styled(HorizontalUL)`
   justify-content: space-around;
   padding: 8px 0;
   background-color: ${lightThemeBackground};
-  color: ${lightThemeText};
   text-transform: uppercase;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+
+  a {
+    color: ${lightThemeText};
+    text-decoration: none;
+  }
+
+  ::after {
+    content: '';
+    height: 2px;
+    background-color: ${darkThemeBackground};
+    width: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 
   @media (max-width: ${mediaWidths.phone.max}) {
     display: flex;
