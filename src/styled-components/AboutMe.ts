@@ -34,9 +34,11 @@ export const AboutMeImage = styled.div`
     z-index: 0;
   }
 
-  @media (max-width: ${mediaWidths.tablet.max}) {
+  @media (min-width: ${mediaWidths.tablet.min} and max-width: ${mediaWidths.tablet.max}) {
     width: 250px;
     height: 250px;
+
+    border-radius: 250px;
   }
 `;
 
