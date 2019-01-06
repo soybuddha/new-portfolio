@@ -26,9 +26,14 @@ export const Job = styled(LI)`
     border-bottom: none;
   }
 
-  @media (max-width: ${mediaWidths.tablet.max}) {
+  @media (max-width: ${mediaWidths.phone.max}) {
     padding-bottom: 10px;
     margin-bottom: 20px;
+  }
+
+  @media (max-width: ${mediaWidths.tablet.max}) {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
   }
 `;
 
