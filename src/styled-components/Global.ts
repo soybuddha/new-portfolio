@@ -108,6 +108,10 @@ export const TitleSection = styled(Section)`
       display: block;
       font-size: 24px;
     }
+
+    div {
+      display: none;
+    }
   }
 `;
 
@@ -128,6 +132,12 @@ export const ContactSection = styled(Section)`
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 683px;
+
+  @media (max-width: ${mediaWidths.phone.max}) {
+    background-position: 44% 80%;
+    background-size: 150%;
+    min-height: 0;
+  }
 `;
 
 export const BodyText = styled.p`
@@ -135,6 +145,16 @@ export const BodyText = styled.p`
   font-size: ${bodyTextSize};
   line-height: 1.89;
   margin: 0;
+
+  span {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: ${mediaWidths.phone.max}) {
+    font-size: 15px;
+    line-height: 1.6;
+  }
 `;
 
 export const SvgLink = styled.a`
