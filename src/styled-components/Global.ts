@@ -46,7 +46,8 @@ export const SectionTitle = styled.h1`
   margin: 0;
 
   @media (max-width: ${mediaWidths.phone.max}) {
-    display: none;
+    font-size: 24px;
+    margin-bottom: 15px;
   }
 `;
 
@@ -110,6 +111,7 @@ export const TitleSection = styled(Section)`
     ${SectionTitle} {
       display: block;
       font-size: 24px;
+      margin-bottom: 0;
     }
 
     div {
@@ -124,7 +126,7 @@ export const TitleSection = styled(Section)`
 
 export const AboutSection = styled(Section)`
   @media (max-width: ${mediaWidths.phone.max}) {
-    margin-top: 120px;
+    margin-top: 86px;
   }
 `;
 

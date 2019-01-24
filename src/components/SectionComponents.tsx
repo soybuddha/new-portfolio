@@ -33,15 +33,13 @@ export const NetworkingLinks = () => {
 
 interface IntMobileLink {
   text: string,
+  location: string,
 }
 
 export const MobileLink: React.SFC<IntMobileLink> = (props) => {
   return (
     <a 
-      href="#"
-      onClick={(event) => {
-        event.preventDefault();
-      }}
+      href={`#${props.location}`}
     >
       {props.text}
     </a>

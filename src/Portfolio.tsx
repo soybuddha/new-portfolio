@@ -5,7 +5,7 @@ import profileImage from './images/about-me-photo.jpg';
 
 import { Contact } from './components/Contact';
 import { Experience } from './components/Experience';
-import { MobileLink, NetworkingLinks } from './components/SectionComponents';
+import { NetworkingLinks } from './components/SectionComponents';
 import { Skills } from './components/Skills';
 import { 
   AboutMeBodyText, 
@@ -15,13 +15,11 @@ import {
 } from './styled-components/AboutMe';
 import { 
   AboutSection, 
-  LI,
   SectionSpacer, 
   SectionSubTitle,
   SectionTitle,
   TitleSection,
 } from './styled-components/Global';
-import { MobileNav } from './styled-components/Mobile';
 
 export function Portfolio() {
   const Wrapper = styled.div`
@@ -42,20 +40,6 @@ export function Portfolio() {
         </SectionSubTitle>
         <NetworkingLinks />
       </TitleSection>
-      <MobileNav>
-        <LI>
-          <MobileLink text="About" />
-        </LI>
-        <LI>
-          <MobileLink text="Skills" />
-        </LI>
-        <LI>
-          <MobileLink text="Experience" />
-        </LI>
-        <LI>
-          <MobileLink text="Contact" />
-        </LI>
-      </MobileNav>
       <AboutSection id="about" theme="light">
         <AboutMeContent>
           <AboutMeText>

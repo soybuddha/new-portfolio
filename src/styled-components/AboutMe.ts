@@ -60,6 +60,6 @@ export const AboutMeBodyText = styled(BodyText)`
   margin: 40px 0 0 0;
 
   @media (max-width: ${mediaWidths.phone.max}) {
-    margin: 20px 0 0;
+    margin: 0;
   }
 `;
