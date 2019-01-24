@@ -72,7 +72,7 @@ export function Skills() {
   ];
 
   return (
-    <Section theme="dark">
+    <Section id="skills" theme="dark">
       <SectionTitle theme="dark">Skills</SectionTitle>
       <SectionSpacer theme="dark" />
       <SkillsList>

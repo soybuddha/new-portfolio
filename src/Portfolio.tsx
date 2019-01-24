@@ -7,12 +7,17 @@ import { Contact } from './components/Contact';
 import { Experience } from './components/Experience';
 import { NetworkingLinks } from './components/SectionComponents';
 import { Skills } from './components/Skills';
-import { AboutMeBodyText } from './styled-components/AboutMe';
 import { 
-  Section, 
+  AboutMeBodyText, 
+  AboutMeContent, 
+  AboutMeImage, 
+  AboutMeText, 
+} from './styled-components/AboutMe';
+import { 
+  AboutSection, 
   SectionSpacer, 
-  SectionSubTitle, 
-  SectionTitle, 
+  SectionSubTitle,
+  SectionTitle,
   TitleSection,
 } from './styled-components/Global';
 
@@ -22,30 +27,6 @@ export function Portfolio() {
     min-height: 100%;
     background-color: #1f4552;
     font-family: 'Lato', sans-serif;
-  `;
-
-  const AboutMeContent = styled.div`
-    display: flex;
-    justify-content: space-between;
-  `;
-
-  const AboutMeText = styled.div`
-    width: 60%;
-  `;
-
-  const AboutMeImage = styled.div`
-    position: relative;
-    width: 300px;
-    height: 300px;
-    border-radius: 300px;
-    overflow: hidden;
-
-    img {
-      position: absolute;
-      top: -35px;
-      left: -30px;
-      width: 110%;
-    }
   `;
 
   return (
@@ -59,7 +40,7 @@ export function Portfolio() {
         </SectionSubTitle>
         <NetworkingLinks />
       </TitleSection>
-      <Section theme="light">
+      <AboutSection id="about" theme="light">
         <AboutMeContent>
           <AboutMeText>
             <SectionTitle theme="light">About</SectionTitle>
@@ -71,7 +52,7 @@ export function Portfolio() {
           </AboutMeText>
           <AboutMeImage><img src={profileImage} /></AboutMeImage>
         </AboutMeContent>
-      </Section>
+      </AboutSection>
       <Skills />
       <Experience />
       <Contact />
